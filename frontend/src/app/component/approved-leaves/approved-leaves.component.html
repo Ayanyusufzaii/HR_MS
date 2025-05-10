@@ -1,0 +1,139 @@
+<!-- Modern HRMS Approved Leaves Page -->
+<div class="flex min-h-screen bg-gray-50">
+  <!-- Sidebar -->
+  <div class="bg-indigo-600 text-white p-4 flex flex-col justify-between transition-all duration-300 ease-in-out relative z-20 md:w-[14%]">
+    <!-- Sidebar Top -->
+    <div>
+      <!-- Logo -->
+      <div class="text-center mb-8 mt-2">
+        <img src="assets/logo.jpg" alt="Company Logo" class="mx-auto w-32 rounded-lg shadow-sm">
+      </div>
+
+      <!-- Sidebar Links -->
+      <ul class="space-y-3">
+        <li>
+          <a href="hr-dashboard" class="flex items-center px-4 py-3 rounded-xl text-white hover:bg-indigo-700 hover:shadow-md transition-all duration-200 group">
+            <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-800 bg-opacity-50 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="w-6 h-6">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <span class="ml-3 font-medium text-left text-white">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/employee-details" class="flex items-center px-4 py-3 rounded-xl text-white hover:bg-indigo-700 hover:shadow-md transition-all duration-200 group">
+            <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-800 bg-opacity-50 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="w-5 h-5">
+                <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h-2v-2c0-2.209-1.791-4-4-4H10c-2.209 0-4 1.791-4 4v2H4v-2c0-3.313 2.687-6 6-6h4c3.313 0 6 2.687 6 6v2z" />
+              </svg>
+            </div>
+            <span class="ml-3 font-medium">Employee Database</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/leave-attendance" class="flex items-center px-4 py-3 rounded-xl text-white bg-indigo-700 shadow-md transition-all duration-200 group">
+            <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-800 bg-opacity-50 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <span class="ml-3 font-medium">Leave Requests</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sidebar Bottom -->
+    <div class="mt-auto space-y-4">
+      <div class="border-t border-indigo-800 pt-4">
+        <a href="#" class="flex items-center px-4 py-3 rounded-xl text-white hover:bg-indigo-700 hover:shadow-md transition-all duration-200 group cursor-pointer">
+          <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-800 bg-opacity-50 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium">Logout</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col transition-all duration-300 ease-in-out overflow-hidden">
+    <header class="bg-white backdrop-blur-sm bg-opacity-90 border-b border-slate-200/60 shadow-sm px-6 py-4 sticky top-0 z-10">
+      <div class="max-w-20xl mx-auto flex justify-between items-center">
+        <!-- Left side: Header Title -->
+        <div>
+          <h1 class="text-xl font-semibold text-slate-800">
+            Approved Leaves
+          </h1>
+          <div class="flex items-center text-sm text-slate-500 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Thursday, May 8, 2025</span>
+          </div>
+        </div>
+
+        <!-- Right side: User Profile (placeholder) -->
+        <div class="flex items-center">
+          <!-- User profile section can be added here if needed -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <div class="flex-1 p-6 bg-gray-50 overflow-auto">
+
+      <!-- Approved Leaves Table Section -->
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 transition duration-300 hover:shadow-md mb-6">
+        <div class="h-2 bg-emerald-600"></div>
+        <div class="p-6">
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="bg-emerald-100 p-2 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-xl text-gray-800">Approved Leave Requests</h3>
+          </div>
+
+          <!-- Table Section -->
+          <div class="overflow-x-auto">
+            <table class="min-w-full table-auto border-collapse">
+              <thead class="bg-gray-50 border-b border-gray-200">
+                <tr>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Leave Type</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">From Date</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">To Date</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Reason</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr *ngFor="let leave of filteredLeaveRequests" class="hover:bg-gray-50 transition duration-150">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ leave.emailId }}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ leave.leaveType }}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ leave.fromDate | date }}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ leave.toDate | date }}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ leave.reason || '—' }}</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                      {{ leave.status }}
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

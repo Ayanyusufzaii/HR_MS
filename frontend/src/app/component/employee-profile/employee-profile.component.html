@@ -1,0 +1,22 @@
+<div *ngIf="employeeProfile" class="p-6">
+  <h2 class="text-xl font-bold">{{ employeeProfile.name }}</h2>
+  <p>{{ employeeProfile.job_role }} - {{ employeeProfile.department }}</p>
+
+  <div class="mt-4">
+    <img *ngIf="employeeProfile.profile_image" [src]="'http://localhost:3000/uploads/' + employeeProfile.profile_image" alt="Profile" class="w-32 h-32 rounded-full object-cover">
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 text-sm mt-4">
+    <div><strong>Email:</strong> {{ employeeProfile.email }}</div>
+    <div><strong>Contact:</strong> {{ employeeProfile.contact_no }}</div>
+    <div><strong>Alt Contact:</strong> {{ employeeProfile.alternate_contact }}</div>
+    <div><strong>Emergency:</strong> {{ employeeProfile.emergency_contact }}</div>
+    <div><strong>Permanent Address:</strong> {{ employeeProfile.permanent_address }}</div>
+    <div><strong>Current Address:</strong> {{ employeeProfile.current_address }}</div>
+    <div><strong>Blood Group:</strong> {{ employeeProfile.blood_group }}</div>
+    <div><strong>Aadhar:</strong> {{ employeeProfile.aadhar_number }}</div>
+    <div><strong>PAN:</strong> {{ employeeProfile.pan_number }}</div>
+    <div><strong>DOB:</strong> {{ employeeProfile.dob | date: 'shortDate' }}</div>
+    <div><strong>DOJ:</strong> {{ employeeProfile.doj | date: 'shortDate' }}</div>
+  </div>
+</div>
